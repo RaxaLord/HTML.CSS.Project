@@ -1,112 +1,171 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
-/* STYLING FOR HEADER AND ITS CONTENTS ONLY  */
 header {
-    background-color: #24292F;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
+  background-color: #24292f;
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header>img {
-    width: 40px;
+.header-left {
+  /* background-color: thistle; */
+  width: 740px;
+  height: 80%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header>input {
-    width: 300px;
-    height: 20px;
-    border-radius: 5%;
-    border-color: transparent;
-    /* background-color: #3F4448; */
+.header-left > input {
+  width: 300px;
+  height: 32px;
+  border-radius: 5%;
+  border: none;
+  background: #3f4448;
 }
 
-/* STYLING FOR MAIN CONTENT SECTION  */
-main {
-    width: 80vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 20px;
+.header-left > ul > li {
+  float: left;
+  color: whitesmoke;
+  font-size: 20px;
+  /* font-weight: bold; */
+  padding-right: 0.6em;
 }
 
-/* LEFT COLUMN STYLING */
-.left {
-    background-color: aliceblue;
-    width: 25%;
-    height: 100%;
+.logo {
+  height: 70%;
 }
 
-.left>img {
-    width: 90%;
+.header-right {
+  /* background-color: tomato; */
+  width: 250px;
+  height: 80%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.left>input {
-    width: 89%;
+.right-header-photo {
+  max-height: 100%;
 }
 
-.left>button {
-    width: 90%;
-    height: 30px;
-    font-weight: bold;
+/* MAIN CONTENT BOX STYLING */
+.content {
+  /* background: wheat; */
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* RIGHT COLUMN STYLING */
-.right {
-    background-color: yellow;
-    width: 75%;
-    height: 100%;
+/* LEFT SIDE OF MAIN CONTENT BOX  */
+.content-left {
+  /* background-color: aliceblue; */
+  width: 25%;
+  height: 100%;
+  padding: 15px;
 }
 
-/* CONTENT NAVIGATION BAR  */
-.content-Nav {
-    position: sticky;
-    top: 0;
-    background-color: teal;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: auto;
+h2 {
+  font-size: 40px;
 }
 
-.overviewBar {
-    display: flex;
+h3 {
+  font-size: 25px;
+  color: #3f4448;
 }
 
-.content-Nav>ul>li {
-    float: left;
-    font-size: 22px;
-    margin: 0 30px;
+.edit-button {
+  width: 100%;
+  height: 35px;
+  border-radius: 4%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-/* REPOSITORIES  */
-.repositories {
-    width: 100%;
-    background-color: tomato;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: stretch;
+.content-left > img {
+  width: 100%;
 }
 
-.innerContent {
-    width: 48%;
-    height: 150px;
-    border: solid 1px grey;
-    border-radius: 3%;
+.content-left > input {
+  width: 99%;
+  height: 30px;
+  font-size: 18px;
+  margin-bottom: 18px;
 }
 
-/* CALENDAR PORTION */
-.calendar>img {
-    width: 100%;
+.bio {
+  font-size: 18px;
+  color: #3f4448;
+}
+
+/* RIGHT SIDE OF MAIN CONENT BOX */
+.content-right {
+  /* background: aquamarine; */
+  width: 75%;
+  height: 100%;
+  padding: 15px;
+}
+
+/* SECONDARY NAV BAR IN RIGHT CONTENT BOX  */
+.body-links {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+}
+
+.body-links > ul > li {
+  display: inline-block;
+  font-size: 22px;
+  margin: 0 30px;
+}
+
+/* SET OF BOXES FOR REPOSITORIES  */
+.pins {
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.pinned {
+  width: 585px;
+  height: 135px;
+  /* background-color: brown; */
+  border: solid 1px grey;
+  border-radius: 1%;
+  margin: 10px;
+}
+
+/* STYLING FOR CALENDAR  */
+.calendar > img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.description {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 17px;
 }
